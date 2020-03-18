@@ -1,0 +1,421 @@
+/* ここから下に記載していく */
+
+/* 　共通部分 */
+* {
+    box-sizing: border-box;
+}
+
+#about h1, #course h1, #news h1, #access h1, #contact h1 {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.none {
+    display: none;
+}
+
+.btn {
+    font-size: 18px;
+    color: white;
+    background-color: #ffd61a;
+    padding: 20px 100px;
+    display: inline-block;
+}
+
+.hvr {
+    transition: all 1s;
+}
+
+.hvr:hover {
+    background-color: rgba(1, 224, 1, 0.918);
+}
+
+/* Wrapの設定 */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    color: #222222;
+    background-color: #fafafa;
+}
+
+/* header */
+header {
+    height: 121px;
+    border: 1px solid #cacaca;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    margin-left: 50px;
+}
+
+.header-menus li {
+    font-size: 21px;
+    display: inline-block;
+    margin: 50px 50px 50px 0;
+}
+
+.header-menus a {
+    display: none;
+}
+
+.menubar {
+    color: #222222;
+}
+
+/* meinvisual */
+.mainvisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgi {
+    background-image: url(../img/mainbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+
+.chachcopy {
+    color: #fafafa;
+    text-align: center;
+    padding: 19.44% 0;    
+}
+
+.chachcopy h1 {
+    font-size: 250%;
+}
+
+.chachcopy h2 {
+    font-size: 170%;
+    padding-top: 30px;
+}
+
+/* contents */
+/* about */
+#about {
+    text-align: center;
+    margin-top: 60px
+}
+
+#about h1 {
+    font-size: 24px;
+    color: #ffd61a;
+}
+
+#about h2 {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#about p {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.about-images {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image {
+    width: 25%;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+/* slickのスライドカーソル部分の設定 */
+.about-images .slick-next {
+    right: 17px; z-index: 100;
+}
+
+.about-images .slick-prev { 
+    left: 23px; z-index: 100;
+}
+
+/* course */
+#course {
+    text-align: center;
+    padding-bottom: 60px;
+    margin-top: 60px;
+}
+
+#course h1 {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+#course p {
+    font-size: 16px;
+}
+
+/* 以下、course-containerの中のCSS */
+.course-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-image {
+    width: 50%;
+}
+
+.course-introduce {
+    width: 50%;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-text {
+    width: 480px;
+    padding: 22% 0;
+}
+
+.course-text h1 {
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+.course-text p {
+    font-size: 16px;
+}
+
+.pdlf {
+    padding-left: 50px;
+}
+
+.pdrht {
+    padding-right: 50px;
+}
+
+.align-rht {
+    margin-left: auto;
+}
+
+/* news class */
+#news {
+    margin: 60px 0;
+}
+
+#news h1 {
+    font-size: 24px;
+    color:#ffd61a;
+    text-align: center;
+}
+
+#news h2 {
+    font-size: 18px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.news-button {
+    text-align: center;
+}
+
+/* 以下、news-containerの中のCSS */
+.news-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.news-centerbox {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-images {
+    width: 300px;
+    margin: 15px 15px;
+    transition: all 0.5s;
+}
+
+.news-images img {
+    width: 100%;
+}
+
+.news-images h3 {
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.news-images p {
+    font-size: 16px;
+}
+
+.news-images:hover {
+    background-color: #9df1fc50;
+}
+
+/* access class */
+#access {
+    width: 100%;
+    margin: 60px 0;
+}
+
+#access h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#access h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.address {
+    width: 100%;
+}
+
+.address-table {
+    display: flex;
+    justify-content: center;
+}
+
+.address-framework {
+    border: 0px;
+}
+
+.td-name {
+    height: 50px;
+    padding-right: 50px;
+}
+
+.td-address {
+    padding-bottom: 30px;
+}
+
+/* contact class */
+#contact {
+    width: 100%;
+}
+
+#contact h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#contact h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#contact h3 {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#contact p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-button {
+    margin-bottom: 140px;
+    text-align: center;
+}
+
+/* 以下、contactformの中のCSS */
+.contactform {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactform-framework {
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.td-formlist {
+    width: 240px;
+    padding: 8px 64px 8px 16px;
+    border-right: 1px solid #bfbfbf;
+}
+
+.td-formdetail {
+    width: 328px;
+    padding: 8px;
+}
+
+.ver-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ver-top {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.td-formdetail input[type="text"] {
+    width: 250px;
+}
+
+.cues {
+    width: 250px;
+    height: 22px;
+}
+
+.motivation {
+    padding-bottom: 24px;
+    font-size: 12px;
+}
+
+.motivation input[type="checkbox"] {
+    display: inline-block;
+}
+
+.td-formdetail textarea {
+    width: 250px;
+    height: 80px;
+}
+
+/* footerの設定 */
+
+footer {
+    padding: 30px 0;
+    color: white;
+    background-color: #707070;
+    text-align: center;
+}
+
+/* iframe部分の設定 */
+iframe {
+    width: 100%;
+    height: 300px;
+    margin: 60px 0;
+}
